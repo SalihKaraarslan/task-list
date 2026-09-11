@@ -1,11 +1,10 @@
 import { Schema, model, type InferSchemaType } from 'mongoose';
 
+import { TITLE_MAX_LENGTH } from './task.constants';
+
 // A task can only be in one of these two states.
 export const TASK_STATUSES = ['PENDING', 'COMPLETED'] as const;
 export type TaskStatus = (typeof TASK_STATUSES)[number];
-
-// The longest title we accept. The mobile app uses the same number.
-export const TITLE_MAX_LENGTH = 120;
 
 const taskSchema = new Schema(
   {
