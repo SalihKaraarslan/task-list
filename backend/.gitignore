@@ -1,0 +1,13 @@
+# Dependencies and build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Environment files (keep the committed example)
+.env
+.env.*
+!.env.example
+
+# Logs / OS noise
+npm-debug.log*
+.DS_Store

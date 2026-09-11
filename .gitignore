@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment files (keep the committed examples)
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# Claude Code local settings
+.claude/

@@ -1,0 +1,25 @@
+{
+  "name": "task-list-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GraphQL backend for the Task List app (Express + Apollo Server + MongoDB)",
+  "main": "dist/server.js",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.13.4",
+    "tsx": "^4.23.13",
+    "typescript": "~6.0.3"
+  }
+}
